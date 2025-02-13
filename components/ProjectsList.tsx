@@ -24,11 +24,19 @@ export default function ProjectsList({ selectedTag, onTagClick }: ProjectsListPr
   useEffect(() => {
     const fetchRepoData = async () => {
       try {
-        const response = await fetch("/api/github-repos")
+        const response = await fetch("https://api.github.com/users/topheman/repos?per_page=100", {
+          headers: {
+            Accept: "application/vnd.github.v3+json",
+          },
+        })
         if (!response.ok) {
           throw new Error("Failed to fetch repo data")
         }
-        const data = await response.json()
+        const repos = await response.json()
+        const data = repos.map((repo: any) => ({
+          name: repo.name,
+          stars: repo.stargazers_count,
+        }))
         setRepoData(data)
       } catch (error) {
         console.error("Error fetching repo data:", error)
@@ -64,9 +72,9 @@ export default function ProjectsList({ selectedTag, onTagClick }: ProjectsListPr
 
   const allTags = useMemo(
     () =>
-      [
-        ...new Set([...projects.flatMap((project) => project.tags), ...oldProjects.flatMap((project) => project.tags)]),
-      ].sort(),
+      Array.from(
+        new Set([...projects.flatMap((project) => project.tags), ...oldProjects.flatMap((project) => project.tags)])
+      ).sort(),
     [],
   )
 
