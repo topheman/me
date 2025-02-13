@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "preview": "http-server out",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
@@ -31,6 +32,7 @@
     "eslint-config-next": "^15.1.7",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
+    "http-server": "^14.1.1",
     "postcss": "^8",
     "prettier": "3.5.0",
     "tailwindcss": "^3.4.17",
