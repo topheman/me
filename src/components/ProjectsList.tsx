@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 
-import { oldProjects } from "@//data/old-projects";
+import { oldProjects } from "@/data/old-projects";
 import { projects } from "@/data/projects";
 
 import OldProjectCard from "./OldProjectCard";
