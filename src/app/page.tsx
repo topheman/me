@@ -1,9 +1,9 @@
 "use client"
 
 import { useState, useMemo, useRef } from "react"
-import HeroBanner from "@/components/HeroBanner"
-import ProjectsList from "@/components/ProjectsList"
-import ScrollChevron from "@/components/ScrollChevron"
+import HeroBanner from "@/src/components/HeroBanner"
+import ProjectsList from "@/src/components/ProjectsList"
+import ScrollChevron from "@/src/components/ScrollChevron"
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null)

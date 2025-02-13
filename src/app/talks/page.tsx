@@ -1,4 +1,4 @@
-import { talks, videos } from "@/data/talks"
+import { talks, videos } from "@/src/data/talks"
 import Link from "next/link"
 import { ExternalLink, Video, Youtube } from "lucide-react"
 

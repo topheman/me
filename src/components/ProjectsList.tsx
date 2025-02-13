@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect, useMemo } from "react"
-import { projects } from "@/data/projects"
-import { oldProjects } from "@/data/old-projects"
+import { projects } from "@/src/data/projects"
+import { oldProjects } from "@/src/data/old-projects"
 import ProjectCard from "./ProjectCard"
 import OldProjectCard from "./OldProjectCard"
 import TagFilter from "./TagFilter"

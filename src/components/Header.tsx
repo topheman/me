@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { FolderOpenDot, Youtube, User } from "lucide-react"
-import { useScrollVisibility } from "@/hooks/useScrollVisibility"
+import { useScrollVisibility } from "@/src/hooks/useScrollVisibility"
 
 export default function Header() {
   const isVisible = useScrollVisibility()
