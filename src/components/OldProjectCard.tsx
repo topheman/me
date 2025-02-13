@@ -1,5 +1,6 @@
-import type { OldProject } from "@/data/types";
 import Link from "next/link";
+
+import type { OldProject } from "@/data/types";
 
 interface OldProjectCardProps {
   project: OldProject;

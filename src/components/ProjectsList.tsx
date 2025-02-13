@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { projects } from "@/data/projects";
+
 import { oldProjects } from "@//data/old-projects";
-import ProjectCard from "./ProjectCard";
+import { projects } from "@/data/projects";
+
 import OldProjectCard from "./OldProjectCard";
+import ProjectCard from "./ProjectCard";
 import TagFilter from "./TagFilter";
 
 interface RepoData {

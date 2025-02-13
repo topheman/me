@@ -1,4 +1,5 @@
 import { QrCode } from "lucide-react";
+
 import { generateQRCode } from "@/utils/qrcode";
 
 interface CustomQRCodeProps {

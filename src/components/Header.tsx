@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { FolderOpenDot, Youtube, User } from "lucide-react";
+import Link from "next/link";
+
 import { useScrollVisibility } from "@/hooks/useScrollVisibility";
 
 export default function Header() {

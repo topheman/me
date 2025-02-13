@@ -1,6 +1,7 @@
+import { Github, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Twitter } from "lucide-react";
+
 import portrait from "@/images/portrait.png";
 
 export default function AboutPage() {

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
 
 interface ScrollChevronProps {
   onClick: () => void;

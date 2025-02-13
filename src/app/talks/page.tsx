@@ -1,6 +1,7 @@
-import { talks, videos } from "@/data/talks";
-import Link from "next/link";
 import { ExternalLink, Video, Youtube } from "lucide-react";
+import Link from "next/link";
+
+import { talks, videos } from "@/data/talks";
 
 export default function TalksPage() {
   return (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef } from "react";
+
 import HeroBanner from "@/components/HeroBanner";
 import ProjectsList from "@/components/ProjectsList";
 import ScrollChevron from "@/components/ScrollChevron";

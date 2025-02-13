@@ -8,6 +8,7 @@
     "start": "next start",
     "preview": "http-server out",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

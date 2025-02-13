@@ -1,5 +1,6 @@
-import { memo } from "react";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { memo } from "react";
+
 import CustomQRCode from "./CustomQRCode";
 
 const HeroBanner = memo(function HeroBanner() {
