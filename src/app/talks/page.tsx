@@ -1,6 +1,6 @@
-import { talks, videos } from "@/src/data/talks"
-import Link from "next/link"
-import { ExternalLink, Video, Youtube } from "lucide-react"
+import { talks, videos } from "@/data/talks";
+import Link from "next/link";
+import { ExternalLink, Video, Youtube } from "lucide-react";
 
 export default function TalksPage() {
   return (
@@ -8,7 +8,10 @@ export default function TalksPage() {
       <h1 className="text-3xl font-bold mb-8 text-[#900000]">My Talks</h1>
       <div className="space-y-2 mb-12">
         {talks.map((talk, index) => (
-          <div key={index} className="bg-white shadow-sm rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
+          <div
+            key={index}
+            className="bg-white shadow-sm rounded-lg p-3 hover:shadow-md transition-shadow duration-300"
+          >
             <div className="flex flex-wrap items-center text-sm">
               <h2 className="text-base font-semibold text-[#900000] mr-2 flex items-center">
                 {talk.url ? (
@@ -36,9 +39,15 @@ export default function TalksPage() {
                         title={video.title}
                       >
                         {video.url.includes("dailymotion.com") ? (
-                          <Video className="w-5 h-5" aria-label="Dailymotion video" />
+                          <Video
+                            className="w-5 h-5"
+                            aria-label="Dailymotion video"
+                          />
                         ) : (
-                          <Youtube className="w-5 h-5" aria-label="YouTube video" />
+                          <Youtube
+                            className="w-5 h-5"
+                            aria-label="YouTube video"
+                          />
                         )}
                       </Link>
                     ))}
@@ -68,10 +77,15 @@ export default function TalksPage() {
         ))}
       </div>
 
-      <h2 className="text-2xl font-bold mb-6 text-[#900000]">Featured Videos</h2>
+      <h2 className="text-2xl font-bold mb-6 text-[#900000]">
+        Featured Videos
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {videos.map((video, index) => (
-          <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+          <div
+            key={index}
+            className="bg-white shadow-md rounded-lg overflow-hidden"
+          >
             <div className="relative pb-[56.25%] h-0">
               <iframe
                 src={video.url}
@@ -82,12 +96,13 @@ export default function TalksPage() {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-[#900000] mb-2">{video.title}</h3>
+              <h3 className="text-lg font-semibold text-[#900000] mb-2">
+                {video.title}
+              </h3>
             </div>
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
-

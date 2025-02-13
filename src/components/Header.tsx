@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { FolderOpenDot, Youtube, User } from "lucide-react"
-import { useScrollVisibility } from "@/src/hooks/useScrollVisibility"
+import Link from "next/link";
+import { FolderOpenDot, Youtube, User } from "lucide-react";
+import { useScrollVisibility } from "@/hooks/useScrollVisibility";
 
 export default function Header() {
-  const isVisible = useScrollVisibility()
+  const isVisible = useScrollVisibility();
 
   return (
     <header
@@ -36,6 +36,5 @@ export default function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }
-

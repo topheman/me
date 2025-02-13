@@ -1,16 +1,21 @@
-import type { Project } from "@/types/project"
-import Link from "next/link"
+import type { Project } from "@/data/types";
+import Link from "next/link";
 
 interface ProjectCardProps {
-  project: Project
-  starCount?: number
-  onTagClick: (tag: string) => void
-  selectedTag: string | null
+  project: Project;
+  starCount?: number;
+  onTagClick: (tag: string) => void;
+  selectedTag: string | null;
 }
 
-export default function ProjectCard({ project, starCount, onTagClick, selectedTag }: ProjectCardProps) {
-  const hasRust = project.tags.includes("rust")
-  const hasReact = project.tags.includes("react")
+export default function ProjectCard({
+  project,
+  starCount,
+  onTagClick,
+  selectedTag,
+}: ProjectCardProps) {
+  const hasRust = project.tags.includes("rust");
+  const hasReact = project.tags.includes("react");
 
   return (
     <div className="py-4 border-b last:border-b-0">
@@ -65,6 +70,5 @@ export default function ProjectCard({ project, starCount, onTagClick, selectedTa
         </div>
       </div>
     </div>
-  )
+  );
 }
-

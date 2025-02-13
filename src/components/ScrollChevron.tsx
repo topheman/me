@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
 
 interface ScrollChevronProps {
-  onClick: () => void
+  onClick: () => void;
 }
 
 export default function ScrollChevron({ onClick }: ScrollChevronProps) {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      const currentScrollY = window.scrollY;
       if (currentScrollY > 100) {
-        setIsVisible(false)
+        setIsVisible(false);
       } else {
-        setIsVisible(true)
+        setIsVisible(true);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll, { passive: true })
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  if (!isVisible) return null
+  if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 md:hidden z-50">
@@ -37,6 +37,5 @@ export default function ScrollChevron({ onClick }: ScrollChevronProps) {
         <ChevronDown className="w-10 h-10 text-white animate-bounce" />
       </button>
     </div>
-  )
+  );
 }
-

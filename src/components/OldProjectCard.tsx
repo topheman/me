@@ -1,18 +1,24 @@
-import type { OldProject } from "@/types/project"
-import Link from "next/link"
+import type { OldProject } from "@/data/types";
+import Link from "next/link";
 
 interface OldProjectCardProps {
-  project: OldProject
-  onTagClick: (tag: string) => void
-  selectedTag: string | null
+  project: OldProject;
+  onTagClick: (tag: string) => void;
+  selectedTag: string | null;
 }
 
-export default function OldProjectCard({ project, onTagClick, selectedTag }: OldProjectCardProps) {
+export default function OldProjectCard({
+  project,
+  onTagClick,
+  selectedTag,
+}: OldProjectCardProps) {
   return (
     <div className="py-4 border-b last:border-b-0">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between">
         <div className="mb-2 sm:mb-0 flex-grow">
-          <h3 className="text-lg font-semibold text-gray-900">{project.name}</h3>
+          <h3 className="text-lg font-semibold text-gray-900">
+            {project.name}
+          </h3>
           <p className="text-sm text-gray-600">{project.description}</p>
           <div className="flex flex-wrap gap-2 mt-2">
             {project.links.demo && (
@@ -67,6 +73,5 @@ export default function OldProjectCard({ project, onTagClick, selectedTag }: Old
         </div>
       </div>
     </div>
-  )
+  );
 }
-

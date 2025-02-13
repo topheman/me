@@ -1,10 +1,14 @@
 interface TagFilterProps {
-  selectedTag: string | null
-  onTagClick: (tag: string) => void
-  allTags: string[]
+  selectedTag: string | null;
+  onTagClick: (tag: string) => void;
+  allTags: string[];
 }
 
-export default function TagFilter({ selectedTag, onTagClick, allTags }: TagFilterProps) {
+export default function TagFilter({
+  selectedTag,
+  onTagClick,
+  allTags,
+}: TagFilterProps) {
   return (
     <div className="mb-8 animate-slide-down">
       <div className="flex items-center justify-between mb-4">
@@ -22,7 +26,9 @@ export default function TagFilter({ selectedTag, onTagClick, allTags }: TagFilte
             key={tag}
             onClick={() => onTagClick(tag)}
             className={`px-3 py-1 rounded-full text-sm ${
-              selectedTag === tag ? "bg-[#900000] text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              selectedTag === tag
+                ? "bg-[#900000] text-white"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
             {tag}
@@ -30,6 +36,5 @@ export default function TagFilter({ selectedTag, onTagClick, allTags }: TagFilte
         ))}
       </div>
     </div>
-  )
+  );
 }
-

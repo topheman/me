@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -17,25 +17,38 @@ export default function AboutPage() {
               className="rounded-full mr-6 object-cover"
             />
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900">Christophe Rosset</h2>
+              <h2 className="text-2xl font-semibold text-gray-900">
+                Christophe Rosset
+              </h2>
               <p className="text-gray-600">Software Engineer • Paris, France</p>
             </div>
           </div>
           <div className="prose prose-sm sm:prose lg:prose-lg">
-            <p>Hi, I'm Christophe Rosset, a software engineer living in Paris, France.</p>
             <p>
-              I help teams manage technical debt and guide developers by sharing development best practices through
-              documentation, workshops, and implementing specific tools.
+              Hi, I'm Christophe Rosset, a software engineer living in Paris,
+              France.
             </p>
             <p>
-              With over 20 years of experience in web development across different technologies, I continue to stay
-              current in my Frontend/JavaScript expertise and more recently in Rust/WebAssembly 🦀 by staying active in
-              the tech community, attending meetups, working on personal projects, and contributing to open source.
+              I help teams manage technical debt and guide developers by sharing
+              development best practices through documentation, workshops, and
+              implementing specific tools.
             </p>
             <p>
-              My personal projects are available on this website, along with talks I gave at conferences and meetups.
+              With over 20 years of experience in web development across
+              different technologies, I continue to stay current in my
+              Frontend/JavaScript expertise and more recently in
+              Rust/WebAssembly 🦀 by staying active in the tech community,
+              attending meetups, working on personal projects, and contributing
+              to open source.
             </p>
-            <p>If you want to know more about my professional journey, you can check my LinkedIn profile.</p>
+            <p>
+              My personal projects are available on this website, along with
+              talks I gave at conferences and meetups.
+            </p>
+            <p>
+              If you want to know more about my professional journey, you can
+              check my LinkedIn profile.
+            </p>
           </div>
         </div>
         <div className="bg-gray-50 px-6 py-4">
@@ -68,6 +81,5 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

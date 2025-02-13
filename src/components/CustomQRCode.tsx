@@ -1,12 +1,12 @@
-import { QrCode } from "lucide-react"
-import { generateQRCode } from "@/src/utils/qrcode"
+import { QrCode } from "lucide-react";
+import { generateQRCode } from "@/utils/qrcode";
 
 interface CustomQRCodeProps {
-  payload: string
+  payload: string;
 }
 
 export default async function CustomQRCode({ payload }: CustomQRCodeProps) {
-  const qrCodeDataUrl = await generateQRCode(payload)
+  const qrCodeDataUrl = await generateQRCode(payload);
 
   return (
     <div className="flex flex-col items-center">
@@ -25,11 +25,15 @@ export default async function CustomQRCode({ payload }: CustomQRCodeProps) {
         )}
       </div>
       <div className="mt-4 text-center">
-        <a href={payload} target="_blank" rel="noopener noreferrer" className="text-xs text-[#900000] hover:underline">
+        <a
+          href={payload}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-[#900000] hover:underline"
+        >
           {payload.replace(/^https?:\/\//, "")}
         </a>
       </div>
     </div>
-  )
+  );
 }
-
