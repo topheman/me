@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import portrait from "@/images/portrait.png";
 
 export default function AboutPage() {
   return (
@@ -10,7 +11,7 @@ export default function AboutPage() {
         <div className="p-6">
           <div className="flex items-center mb-6">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tophe-portrait-full-FnQsUNaWJwvSrSmdRNDSGvGr6EoKnr.png"
+              src={portrait}
               alt="Portrait of Christophe Rosset"
               width={120}
               height={120}
