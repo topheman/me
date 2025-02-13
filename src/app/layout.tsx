@@ -5,15 +5,16 @@ import type React from "react";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
+import { getMetadata } from "@/utils/metadata";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Christophe Rosset - Developer Portfolio",
+export const metadata: Metadata = getMetadata({
+  title: "Christophe Rosset (topheman) - Developer Portfolio",
   description:
-    "Showcasing personal projects and talks by Christophe Rosset, a passionate developer with expertise in JavaScript, TypeScript, React, Node.js, and Rust.",
-  generator: "v0.dev",
-};
+    "Showcasing personal projects and talks by Christophe Rosset (topheman), a passionate developer with expertise in JavaScript, TypeScript, React, Node.js, and Rust.",
+  imagePath: "/social-media-preview.png",
+  twitterHandle: "@topheman",
+});
 
 export default function RootLayout({
   children,

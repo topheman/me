@@ -1,7 +1,16 @@
 import { ExternalLink, Video, Youtube } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
 
 import { talks, videos } from "@/data/talks";
+import { getMetadata } from "@/utils/metadata";
+
+export const metadata: Metadata = getMetadata({
+  title: "Christophe Rosset (topheman) - Developer Portfolio",
+  description: "Talks I gave at conferences and meetups",
+  imagePath: "/social-media-preview-talks.png",
+  twitterHandle: "@topheman",
+});
 
 export default function TalksPage() {
   return (
