@@ -1,0 +1,72 @@
+.nf_browsers-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+@keyframes nf_scaleIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes nf_fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nf_browser-icon {
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+}
+
+.nf_browser-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nf_browser-icon:nth-child(1) {
+  animation: nf_scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards;
+}
+
+.nf_browser-icon:nth-child(2) {
+  animation: nf_scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s forwards;
+}
+
+.nf_browser-icon:nth-child(3) {
+  animation: nf_scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s forwards;
+}
+
+.nf_text-content {
+  opacity: 0;
+  animation: nf_fadeSlideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 1.2s forwards;
+}
+
+.nf_hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.nf_hover-scale:hover {
+  transform: scale(1.05);
+}
