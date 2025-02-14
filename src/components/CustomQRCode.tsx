@@ -28,7 +28,6 @@ export default async function CustomQRCode({ payload }: CustomQRCodeProps) {
       <div className="mt-4 text-center">
         <a
           href={payload}
-          target="_blank"
           rel="noopener noreferrer"
           className="text-xs text-[#900000] hover:underline"
         >

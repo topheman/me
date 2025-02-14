@@ -49,7 +49,7 @@ const HeroBanner = memo(function HeroBanner() {
           </div>
         </div>
         <div className="animate-scale-in animation-delay-1000">
-          <CustomQRCode payload="http://dev.topheman.com/my-projects/" />
+          <CustomQRCode payload="https://topheman.github.io/me/" />
         </div>
       </div>
       <div className="absolute inset-0 z-0 animate-bg-pulse">
