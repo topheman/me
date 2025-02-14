@@ -8,8 +8,8 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-20 max-w-[65ch]">
       <h1 className="text-3xl font-bold mb-8 text-[#900000]">About Me</h1>
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-[65ch] mx-auto">
-        <div className="p-6">
+      <div className="md:bg-white md:shadow-lg rounded-lg overflow-hidden max-w-[65ch] mx-auto">
+        <div className="md:p-6">
           <div className="flex items-center mb-6">
             <Image
               src={portrait}
@@ -25,7 +25,7 @@ export default function AboutPage() {
               <p className="text-gray-600">Software Engineer • Paris, France</p>
             </div>
           </div>
-          <div className="prose prose-sm sm:prose lg:prose-lg">
+          <div className="prose">
             <p>
               Hi, I'm Christophe Rosset, a software engineer living in Paris,
               France.
