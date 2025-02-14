@@ -175,6 +175,10 @@ export const oldProjects: OldProject[] = [
       "My first steps on the BabylonJS framework, ended up creating a full API to manage 3d cones (like the ones I used to draw in cartoons)",
     tags: ["babylonjs"],
     links: {
+      demo: {
+        href: "http://labs.topheman.com/babylonjs/",
+        title: "All about BabylonJS - first steps",
+      },
       repo: {
         href: "https://github.com/topheman/BabylonJSFirstSteps",
         title: "BabylonJS - first steps on github",
@@ -222,6 +226,10 @@ export const oldProjects: OldProject[] = [
     description: "A little test on threejs with the boilerplate for Threejs …",
     tags: ["threejs"],
     links: {
+      demo: {
+        href: "http://labs.topheman.com/threejs/",
+        title: "Play Threejs-cone",
+      },
       repo: {
         href: "https://github.com/topheman/threejs-cone",
         title: "Threejs-cone on github",

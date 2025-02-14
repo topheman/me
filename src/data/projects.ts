@@ -8,7 +8,7 @@ export const projects: Project[] = [
       href: "https://topheman.github.io/toolchain-notes/",
       title: "Diving into the source code of rolldown and oxc",
     },
-    tags: ["rust", "typescript", "toolchain", "rolldown", "oxc"],
+    tags: ["rust", "toolchain", "rolldown", "oxc"],
   },
   {
     name: "topheman/snake-pipe-rust",
@@ -17,7 +17,7 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/snake-pipe-rust",
       title: "Rust / Terminal / Unix",
     },
-    tags: ["rust", "terminal", "unix"],
+    tags: ["rust", "cli", "terminal", "unix"],
   },
   {
     name: "topheman/bevy-rust-wasm-experiments",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/deno-weather",
       title: "topheman/deno-weather",
     },
-    tags: ["deno"],
+    tags: ["deno", "cli"],
   },
   {
     name: "topheman/webassembly-wasi-experiments",
@@ -96,15 +96,15 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/rust-wasm-experiments",
       title: "WebAssembly",
     },
-    tags: ["webassembly", "rust"],
+    tags: ["rust", "webassembly"],
   },
   {
     name: "topheman/react-fiber-experiments",
     description:
       "Discover the new features coming with React Fiber like “Suspense”",
     link: {
-      href: "https://react-fiber-experiments.surge.sh/",
-      title: "Try out React Suspense",
+      href: "https://github.com/topheman/react-fiber-experiments",
+      title: "All about React Suspense",
     },
     tags: ["react"],
   },
@@ -145,7 +145,7 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/gopher-ball",
       title: "gopher-ball",
     },
-    tags: ["golang", "sdl2"],
+    tags: ["golang", "sdl2", "game"],
   },
   {
     name: "topheman/lite-router",
@@ -224,7 +224,7 @@ export const projects: Project[] = [
     description:
       "An Isomorphic app in React and ES6, with ExpressJS and topheman-apis-proxy for the backend",
     link: {
-      href: "http://dev.topheman.com/react-es6-isomorphic/",
+      href: "https://github.com/topheman/react-es6-isomorphic/",
       title: "Isomorphic App with React and ES6",
     },
     tags: ["react", "expressjs"],
