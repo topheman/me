@@ -2,6 +2,24 @@ import type { Project } from "@/data/types";
 
 export const projects: Project[] = [
   {
+    name: "topheman/fakeshop",
+    description:
+      "Demo e-commerce website showcasing latest features of Next.js 15",
+    link: {
+      href: "https://github.com/topheman/fakeshop",
+      title:
+        "Discover the latest features of Next.js 15 through a fake e-commerce website",
+    },
+    tags: [
+      "nextjs",
+      "react",
+      "server-components",
+      "server-actions",
+      "react-query",
+      "tailwind",
+    ],
+  },
+  {
     name: "topheman/toolchain-notes",
     description: "The source code (rust/ts) of rolldown/oxc explained.",
     link: {
