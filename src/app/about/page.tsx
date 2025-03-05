@@ -2,6 +2,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { BlueskyIcon } from "@/components/BlueskyIcon";
 import portrait from "@/images/portrait.png";
 
 export default function AboutPage() {
@@ -78,6 +79,14 @@ export default function AboutPage() {
             >
               <span className="sr-only">Twitter</span>
               <Twitter className="h-6 w-6" aria-hidden="true" />
+            </Link>
+            <Link
+              href="https://bsky.app/profile/topheman.bsky.social"
+              className="text-[#900000] opacity-70 hover:opacity-100 transition-opacity duration-300"
+              title="Follow me on Bluesky"
+            >
+              <span className="sr-only">Bluesky</span>
+              <BlueskyIcon stroke="#900000" height={24} width={24} />
             </Link>
           </div>
         </div>

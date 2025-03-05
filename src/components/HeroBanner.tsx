@@ -1,7 +1,11 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { memo } from "react";
 
+import { BlueskyIcon } from "./BlueskyIcon";
 import CustomQRCode from "./CustomQRCode";
+
+const socialClassName =
+  "bg-[#900000] hover:bg-[#900000]/70 text-white rounded-full inline-flex items-center gap-2 px-4 py-2 transition-colors duration-300 animate-bounce-in";
 
 const HeroBanner = memo(function HeroBanner() {
   return (
@@ -17,38 +21,51 @@ const HeroBanner = memo(function HeroBanner() {
             and solve real-world problems.
           </p>
           <div className="flex flex-col items-center md:items-start animate-fade-in-up animation-delay-600">
-            <div className="flex gap-4 justify-center md:justify-start">
+            <div className="w-[300px] sm:w-auto flex-wrap flex gap-4 justify-center md:justify-start">
               <a
                 href="https://github.com/topheman"
+                title="Visit my GitHub profile"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#900000] hover:bg-[#900000]/70 text-white rounded-full inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base transition-colors duration-300 animate-bounce-in animation-delay-900"
+                className={`${socialClassName} animation-delay-900`}
               >
                 <Github className="w-5 h-5" aria-hidden="true" />
                 <span>GitHub</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/topheman/"
+                title="Connect with me on LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#900000] hover:bg-[#900000]/70 text-white rounded-full inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base transition-colors duration-300 animate-bounce-in animation-delay-1000"
+                className={`${socialClassName} animation-delay-1000`}
               >
                 <Linkedin className="w-5 h-5" aria-hidden="true" />
                 <span>LinkedIn</span>
               </a>
               <a
                 href="https://x.com/topheman"
+                title="Follow me on Twitter"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#900000] hover:bg-[#900000]/70 text-white rounded-full inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base transition-colors duration-300 animate-bounce-in animation-delay-1100"
+                className={`${socialClassName} animation-delay-1100`}
               >
                 <Twitter className="w-5 h-5" aria-hidden="true" />
                 <span>Twitter</span>
               </a>
+              <a
+                href="https://bsky.app/profile/topheman.bsky.social"
+                title="Follow me on Bluesky"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${socialClassName} animation-delay-1200`}
+              >
+                <BlueskyIcon />
+                <span>Bluesky</span>
+              </a>
             </div>
           </div>
         </div>
-        <div className="animate-scale-in animation-delay-1000">
+        <div className="animate-scale-in animation-delay-1200">
           <CustomQRCode payload="https://topheman.github.io/me/" />
         </div>
       </div>
