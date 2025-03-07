@@ -34,7 +34,7 @@ export default function ScrollChevron({ onClick }: ScrollChevronProps) {
         className="bg-[#900000] rounded-full p-2 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#900000]"
         aria-label="Scroll to projects"
       >
-        <ChevronDown className="w-10 h-10 text-white animate-bounce" />
+        <ChevronDown className="w-10 h-10 text-white animate-bounce pt-2" />
       </button>
     </div>
   );
