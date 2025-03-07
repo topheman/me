@@ -20,10 +20,12 @@ export default function AboutPage() {
               className="rounded-full mr-6 object-cover"
             />
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900">
+              <h2 className="text-2xl font-semibold text-gray-900 animate-name-slide">
                 Christophe Rosset
               </h2>
-              <p className="text-gray-600">Software Engineer • Paris, France</p>
+              <p className="text-gray-600 animate-title-fade">
+                Software Engineer • Paris, France
+              </p>
             </div>
           </div>
           <div className="prose">
