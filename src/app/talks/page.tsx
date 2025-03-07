@@ -38,16 +38,17 @@ export default function TalksPage() {
                   <span>{talk.title}</span>
                 )}
                 {talk.videoLinks && talk.videoLinks.length > 0 && (
-                  <span className="flex items-center ml-2">
+                  <span className="flex items-center ml-3 gap-2">
                     {talk.videoLinks.map((video, videoIndex) => (
                       <Link
                         key={videoIndex}
                         href={video.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#900000] hover:underline inline-flex items-center mr-1"
+                        className="text-[#900000] hover:scale-150 transform transition-transform duration-300 inline-flex items-center mr-1 relative"
                         title={video.title}
                       >
+                        <span className="-inset-2 absolute"></span>
                         {video.url.includes("dailymotion.com") ? (
                           <Video
                             className="w-5 h-5"
@@ -73,8 +74,9 @@ export default function TalksPage() {
                       href={talk.event.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#900000] hover:underline"
+                      className="text-[#900000] hover:underline relative"
                     >
+                      <span className="-inset-2 absolute"></span>
                       {talk.event.name}
                     </Link>
                   ) : (
@@ -107,7 +109,9 @@ export default function TalksPage() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-semibold text-[#900000] mb-2">
-                {video.title}
+                <a href={video.url} target="_blank" rel="noopener noreferrer">
+                  {video.title}
+                </a>
               </h3>
             </div>
           </div>
