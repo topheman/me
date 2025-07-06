@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { BlueskyIcon } from "@/components/BlueskyIcon";
+import { StackOverflowIcon } from "@/components/StackOverflowIcon";
 import portrait from "@/images/portrait.png";
 
 export default function AboutPage() {
@@ -89,6 +90,19 @@ export default function AboutPage() {
             >
               <span className="sr-only">Bluesky</span>
               <BlueskyIcon stroke="#900000" height={24} width={24} />
+            </Link>
+            <Link
+              href="https://stackoverflow.com/users/2733488/topheman"
+              className="text-[#900000] opacity-70 hover:opacity-100 transition-opacity duration-300"
+              title="Visit my Stack Overflow profile"
+            >
+              <span className="sr-only">Stack Overflow</span>
+              <StackOverflowIcon
+                stroke="#900000"
+                height={24}
+                width={24}
+                strokeWidth={0.05}
+              />
             </Link>
           </div>
         </div>
