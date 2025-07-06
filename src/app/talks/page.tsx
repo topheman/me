@@ -27,8 +27,6 @@ export default function TalksPage() {
                 {talk.url ? (
                   <Link
                     href={talk.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="hover:underline flex items-center"
                   >
                     {talk.title}
@@ -43,8 +41,6 @@ export default function TalksPage() {
                       <Link
                         key={videoIndex}
                         href={video.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="text-[#900000] hover:scale-150 transform transition-transform duration-300 inline-flex items-center mr-1 relative"
                         title={video.title}
                       >
@@ -72,8 +68,6 @@ export default function TalksPage() {
                   {talk.event.url ? (
                     <Link
                       href={talk.event.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="text-[#900000] hover:underline relative"
                     >
                       <span className="-inset-2 absolute"></span>
@@ -109,9 +103,7 @@ export default function TalksPage() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-semibold text-[#900000] mb-2">
-                <a href={video.url} target="_blank" rel="noopener noreferrer">
-                  {video.title}
-                </a>
+                <a href={video.url}>{video.title}</a>
               </h3>
             </div>
           </div>

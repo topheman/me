@@ -26,8 +26,6 @@ export default function ProjectCard({
             <Link
               href={project.link.href}
               className="text-lg font-semibold text-[#900000] hover:underline mr-2"
-              target="_blank"
-              rel="noopener noreferrer"
               title={project.link.title}
             >
               {project.name}

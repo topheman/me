@@ -25,8 +25,6 @@ const HeroBanner = memo(function HeroBanner() {
               <a
                 href="https://github.com/topheman"
                 title="Visit my GitHub profile"
-                target="_blank"
-                rel="noopener noreferrer"
                 className={`${socialClassName} animation-delay-900`}
               >
                 <Github className="w-5 h-5" aria-hidden="true" />
@@ -35,8 +33,6 @@ const HeroBanner = memo(function HeroBanner() {
               <a
                 href="https://www.linkedin.com/in/topheman/"
                 title="Connect with me on LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
                 className={`${socialClassName} animation-delay-1000`}
               >
                 <Linkedin className="w-5 h-5" aria-hidden="true" />
@@ -45,8 +41,6 @@ const HeroBanner = memo(function HeroBanner() {
               <a
                 href="https://x.com/topheman"
                 title="Follow me on Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
                 className={`${socialClassName} animation-delay-1100`}
               >
                 <Twitter className="w-5 h-5" aria-hidden="true" />
@@ -55,8 +49,6 @@ const HeroBanner = memo(function HeroBanner() {
               <a
                 href="https://bsky.app/profile/topheman.bsky.social"
                 title="Follow me on Bluesky"
-                target="_blank"
-                rel="noopener noreferrer"
                 className={`${socialClassName} animation-delay-1200`}
               >
                 <BlueskyIcon />

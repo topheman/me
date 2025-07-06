@@ -26,8 +26,6 @@ export default function OldProjectCard({
               <Link
                 href={project.links.demo.href}
                 className="text-xs text-[#900000] hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
                 title={project.links.demo.title}
               >
                 demo
@@ -37,8 +35,6 @@ export default function OldProjectCard({
               <Link
                 href={project.links.repo.href}
                 className="text-xs text-[#900000] hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
                 title={project.links.repo.title}
               >
                 repo
@@ -48,8 +44,6 @@ export default function OldProjectCard({
               <Link
                 href={project.links.post.href}
                 className="text-xs text-[#900000] hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
                 title={project.links.post.title}
               >
                 post
