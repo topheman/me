@@ -2,6 +2,26 @@ import type { Project } from "@/data/types";
 
 export const projects: Project[] = [
   {
+    name: "topheman/webassembly-component-model-experiments",
+    description:
+      "WebAssembly Component Model based REPL with sandboxed multi-language plugin system",
+    link: {
+      href: "https://github.com/topheman/webassembly-component-model-experiments",
+      title:
+        "WebAssembly Component Model based REPL with sandboxed multi-language plugin system - unified codebase runs in CLI (Rust) and web (TypeScript)",
+    },
+    tags: [
+      "webassembly",
+      "component-model",
+      "wasi",
+      "wasmtime",
+      "repl",
+      "rust",
+      "react",
+      "tailwind",
+    ],
+  },
+  {
     name: "topheman/fakeshop",
     description:
       "Demo e-commerce website showcasing latest features of Next.js 15",
@@ -45,7 +65,7 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/bevy-rust-wasm-experiments",
       title: "Rust / WebAssembly / Bevy",
     },
-    tags: ["rust", "webassembly", "bevy"],
+    tags: ["rust", "webassembly", "bevy", "deviceorientation", "game"],
   },
   {
     name: "topheman/webrtc-remote-control",
@@ -245,7 +265,7 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/react-es6-isomorphic/",
       title: "Isomorphic App with React and ES6",
     },
-    tags: ["react", "expressjs"],
+    tags: ["react", "express"],
   },
   {
     name: "topheman-apis-proxy",
@@ -255,6 +275,6 @@ export const projects: Project[] = [
       href: "https://github.com/topheman/topheman-apis-proxy",
       title: "topheman-apis-proxy on github",
     },
-    tags: ["expressjs"],
+    tags: ["express"],
   },
 ];

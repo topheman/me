@@ -117,7 +117,7 @@ export const oldProjects: OldProject[] = [
     name: "Topheman Bombs (v2)",
     description:
       "HTML5 / Javascript game that takes advantage of the canvas element and the accelerometer (devicemotion/deviceorientation events) on your device. Play offline on your mobile as well as on your desktop with an accelerometer emulator",
-    tags: ["game"],
+    tags: ["game", "deviceorientation"],
     links: {
       demo: {
         href: "https://topheman.github.io/bombs/",
