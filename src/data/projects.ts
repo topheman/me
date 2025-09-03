@@ -2,6 +2,26 @@ import type { Project } from "@/data/types";
 
 export const projects: Project[] = [
   {
+    name: "topheman/update-homebrew-tap",
+    description:
+      "GitHub Action that updates a formula of a homebrew-tap repo based on your template",
+    link: {
+      href: "https://github.com/topheman/update-homebrew-tap",
+      title:
+        "GitHub Action that updates a formula of a homebrew-tap repo based on your template",
+    },
+    tags: ["github", "github-actions", "homebrew", "typescript"],
+  },
+  {
+    name: "topheman/create-release-if-not-exist",
+    description: "GitHub Action that creates a release if it doesn't exist",
+    link: {
+      href: "https://github.com/topheman/create-release-if-not-exist",
+      title: "GitHub Action that creates a release if it doesn't exist",
+    },
+    tags: ["github", "github-actions"],
+  },
+  {
     name: "topheman/webassembly-component-model-experiments",
     description:
       "WebAssembly Component Model based REPL with sandboxed multi-language plugin system",

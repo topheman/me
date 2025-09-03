@@ -17,6 +17,9 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   const hasRust = project.tags.includes("rust");
   const hasReact = project.tags.includes("react");
+  const hasGithubActions = project.tags.includes("github-actions");
+  const hasDocker = project.tags.includes("docker");
+  const hasWebAssembly = project.tags.includes("webassembly");
 
   return (
     <div className="py-4 border-b last:border-b-0">
@@ -31,13 +34,36 @@ export default function ProjectCard({
               {project.name}
             </Link>
             {hasRust && (
-              <span className="text-sm mr-2" aria-label="Rust">
+              <span className="text-sm mr-2" aria-hidden="true" title="Rust">
                 🦀
               </span>
             )}
             {hasReact && (
-              <span className="text-sm mr-2" aria-label="React">
+              <span className="text-sm mr-2" aria-hidden="true" title="React">
                 ⚛️
+              </span>
+            )}
+            {hasWebAssembly && (
+              <span
+                className="text-sm mr-2"
+                aria-hidden="true"
+                title="WebAssembly"
+              >
+                🧩
+              </span>
+            )}
+            {hasGithubActions && (
+              <span
+                className="text-sm mr-2"
+                aria-hidden="true"
+                title="GitHub Actions"
+              >
+                🤖
+              </span>
+            )}
+            {hasDocker && (
+              <span className="text-sm mr-2" aria-hidden="true" title="Docker">
+                🐳
               </span>
             )}
             {starCount !== undefined && starCount >= 10 && (
