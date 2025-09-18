@@ -157,10 +157,10 @@
   animation: slideUp 0.3s ease-in forwards;
 }
 
-@keyframes nameSlideIn {
+@keyframes xSlideIn {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(var(--initial-translate-x));
   }
   100% {
     opacity: 1;
@@ -168,10 +168,10 @@
   }
 }
 
-@keyframes titleFadeIn {
+@keyframes ySlideIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(var(--initial-translate-y));
   }
   100% {
     opacity: 1;
@@ -180,13 +180,20 @@
 }
 
 .animate-name-slide {
+  --initial-translate-x: -30px;
   opacity: 0;
-  animation: nameSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: xSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .animate-title-fade {
+  --initial-translate-y: 30px;
   opacity: 0;
-  animation: titleFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: ySlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-talk-title {
+  --initial-translate-x: 30px;
+  animation: xSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 /**

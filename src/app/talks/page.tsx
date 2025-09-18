@@ -15,7 +15,9 @@ export const metadata: Metadata = getMetadata({
 export default function TalksPage() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-20">
-      <h1 className="text-3xl font-bold mb-8 text-[#900000]">My Talks</h1>
+      <h1 className="text-3xl font-bold mb-8 text-[#900000] animate-talk-title">
+        My Talks
+      </h1>
       <div className="space-y-2 mb-12">
         {talks.map((talk, index) => (
           <div
