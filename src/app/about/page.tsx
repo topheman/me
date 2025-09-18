@@ -19,7 +19,7 @@ export default function AboutPage() {
               alt="Portrait of Christophe Rosset"
               width={120}
               height={120}
-              className="rounded-full mr-6 object-cover"
+              className="rounded-full mr-6 object-cover animate-in zoom-in duration-500"
             />
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 animate-name-slide">
