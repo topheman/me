@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { BlueskyIcon } from "@/components/BlueskyIcon";
+import { DevToIcon } from "@/components/DevToIcon";
 import { StackOverflowIcon } from "@/components/StackOverflowIcon";
 import portrait from "@/images/portrait.png";
 
@@ -103,6 +104,14 @@ export default function AboutPage() {
                 width={24}
                 strokeWidth={0.05}
               />
+            </Link>
+            <Link
+              href="https://dev.to/topheman"
+              className="text-[#900000] opacity-70 hover:opacity-100 transition-opacity duration-300"
+              title="Visit my DevTo profile"
+            >
+              <span className="sr-only">DevTo</span>
+              <DevToIcon fill="#900000" height={24} width={24} />
             </Link>
           </div>
         </div>
