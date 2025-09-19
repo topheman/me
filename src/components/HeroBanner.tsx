@@ -1,8 +1,11 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { memo } from "react";
 
+import qrcode from "@/images/qrcode-me.png";
+
 import { BlueskyIcon } from "./BlueskyIcon";
-import CustomQRCode from "./CustomQRCode";
+// import CustomQRCode from "./CustomQRCode";
+import CustomQRCodeImg from "./CustomQRCodeImg";
 
 const socialClassName =
   "bg-[#900000] hover:bg-[#900000]/70 text-white rounded-full inline-flex items-center gap-2 px-4 py-2 transition-colors duration-300 animate-bounce-in";
@@ -58,7 +61,10 @@ const HeroBanner = memo(function HeroBanner() {
           </div>
         </div>
         <div className="animate-scale-in animation-delay-1200">
-          <CustomQRCode payload="https://topheman.github.io/me/" />
+          <CustomQRCodeImg
+            src={qrcode.src}
+            payload="https://topheman.github.io/me/"
+          />
         </div>
       </div>
       <div className="absolute inset-0 z-0 animate-bg-pulse">
