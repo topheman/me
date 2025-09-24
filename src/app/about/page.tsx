@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { BlueskyIcon } from "@/components/BlueskyIcon";
+import { ButtonCv } from "@/components/ButtonCv";
 import { DevToIcon } from "@/components/DevToIcon";
 import { StackOverflowIcon } from "@/components/StackOverflowIcon";
 import portrait from "@/images/portrait.png";
@@ -113,6 +114,9 @@ export default function AboutPage() {
               <span className="sr-only">DevTo</span>
               <DevToIcon fill="#900000" height={24} width={24} />
             </Link>
+          </div>
+          <div className="text-center mt-8 ">
+            <ButtonCv />
           </div>
         </div>
       </div>
