@@ -2,7 +2,18 @@ import type { Talk } from "@/data/types";
 
 export const talks: Talk[] = [
   {
-    title: "🦀 A snake game based on stdin/stdout in rust",
+    title: "Discover WebAssembly Component Model",
+    url: "https://topheman.github.io/talks/webassembly-component-model/",
+    event: {
+      name: "Paris Rust Meetup",
+      url: "https://www.meetup.com/rust-paris/events/310424476/",
+    },
+    date: "oct 2025",
+    videoLinks: [],
+    tags: ["rust", "webassembly"],
+  },
+  {
+    title: "A snake game based on stdin/stdout in rust",
     url: "https://github.com/topheman/snake-pipe-rust",
     event: {
       name: "Paris Rust Meetup",
@@ -10,6 +21,7 @@ export const talks: Talk[] = [
     },
     date: "mar 2024",
     videoLinks: [],
+    tags: ["rust"],
   },
   {
     title: "Try WebAssembly Now",
@@ -29,6 +41,7 @@ export const talks: Talk[] = [
         url: "https://www.dailymotion.com/video/x7bzmjz",
       },
     ],
+    tags: ["rust", "webassembly"],
   },
   {
     title: "NextJS Movie Browser",
@@ -44,6 +57,7 @@ export const talks: Talk[] = [
         url: "https://youtu.be/yy8H4kwnyC8?t=1011",
       },
     ],
+    tags: [],
   },
   {
     title: "Enregistrer un Screencast",
@@ -59,6 +73,7 @@ export const talks: Talk[] = [
         url: "https://youtu.be/CzToqxwwebc?t=4885",
       },
     ],
+    tags: [],
   },
   {
     title: "Discover React Suspense with topheman/react-fiber-experiments",
@@ -69,6 +84,7 @@ export const talks: Talk[] = [
       },
     ],
     date: "sept 2018",
+    tags: [],
   },
   {
     title: "Discover React Suspense with topheman/react-fiber-experiments",
@@ -84,6 +100,7 @@ export const talks: Talk[] = [
         url: "https://www.youtube.com/watch?v=GlBhj1ee1wk",
       },
     ],
+    tags: [],
   },
   {
     title: "Pourquoi j'ai fait topheman/npm-registry-browser",
@@ -99,6 +116,7 @@ export const talks: Talk[] = [
         url: "http://dev.topheman.com/pourquoi-realiser-topheman-npm-registry-browser-video-talk/",
       },
     ],
+    tags: [],
   },
   {
     title: "Mixing React & d3",
@@ -113,6 +131,7 @@ export const talks: Talk[] = [
         url: "https://youtu.be/UuqnKH8RobA?list=PLP0qkoIjGNDU4W0Qg6Qf8dniOupWfyElN",
       },
     ],
+    tags: [],
   },
   {
     title: "Mixing d3 & React",
@@ -123,6 +142,7 @@ export const talks: Talk[] = [
     },
     date: "nov 2016",
     videoLinks: [],
+    tags: [],
   },
   {
     title: "React + Redux, a perfect match",
@@ -133,6 +153,7 @@ export const talks: Talk[] = [
     },
     date: "jan 2016",
     videoLinks: [],
+    tags: [],
   },
   {
     title: "React + Redux, a perfect match",
@@ -143,6 +164,7 @@ export const talks: Talk[] = [
     },
     date: "nov 2015",
     videoLinks: [],
+    tags: [],
   },
 ];
 

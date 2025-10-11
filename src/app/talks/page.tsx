@@ -80,6 +80,20 @@ export default function TalksPage() {
                   )}
                 </>
               )}
+              {talk.tags.includes("rust") && (
+                <span className="text-sm ml-2" aria-hidden="true" title="Rust">
+                  🦀
+                </span>
+              )}
+              {talk.tags.includes("webassembly") && (
+                <span
+                  className="text-sm ml-2"
+                  aria-hidden="true"
+                  title="WebAssembly"
+                >
+                  🧩
+                </span>
+              )}
             </div>
           </div>
         ))}

@@ -22,6 +22,7 @@ export interface Talk {
     title: string;
     url: string;
   }>;
+  tags: string[];
 }
 
 // Old Project types
