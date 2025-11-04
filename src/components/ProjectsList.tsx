@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 
 import { oldProjects } from "@/data/old-projects";
 import { projects } from "@/data/projects";
+import { getGithubRepos } from "@/lib/github";
 
 import OldProjectCard from "./OldProjectCard";
 import ProjectCard from "./ProjectCard";
@@ -29,22 +30,7 @@ export default function ProjectsList({
   useEffect(() => {
     const fetchRepoData = async () => {
       try {
-        const response = await fetch(
-          "https://api.github.com/users/topheman/repos?per_page=100",
-          {
-            headers: {
-              Accept: "application/vnd.github.v3+json",
-            },
-          },
-        );
-        if (!response.ok) {
-          throw new Error("Failed to fetch repo data");
-        }
-        const repos = await response.json();
-        const data = repos.map((repo: any) => ({
-          name: repo.name,
-          stars: repo.stargazers_count,
-        }));
+        const data = await getGithubRepos(2);
         setRepoData(data);
       } catch (error) {
         console.error("Error fetching repo data:", error);
