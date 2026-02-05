@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import type { Project } from "@/data/types";
+import effectIcon from "@/images/effect.png";
 
 interface ProjectCardProps {
   project: Project;
@@ -20,6 +22,7 @@ export default function ProjectCard({
   const hasGithubActions = project.tags.includes("github-actions");
   const hasDocker = project.tags.includes("docker");
   const hasWebAssembly = project.tags.includes("webassembly");
+  const hasEffect = project.tags.includes("effect");
 
   return (
     <div className="py-4 border-b last:border-b-0">
@@ -41,6 +44,11 @@ export default function ProjectCard({
             {hasReact && (
               <span className="text-sm mr-2" aria-hidden="true" title="React">
                 ⚛️
+              </span>
+            )}
+            {hasEffect && (
+              <span className="text-sm mr-2" aria-hidden="true" title="Effect">
+                <Image src={effectIcon} alt="Effect" width={20} height={20} />
               </span>
             )}
             {hasWebAssembly && (
@@ -83,11 +91,10 @@ export default function ProjectCard({
             <button
               key={index}
               onClick={() => onTagClick(tag)}
-              className={`px-2 py-1 rounded text-xs ${
-                selectedTag === tag
+              className={`px-2 py-1 rounded text-xs ${selectedTag === tag
                   ? "bg-[#900000] text-white hover:bg-opacity-90"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+                }`}
             >
               {tag}
             </button>

@@ -2,6 +2,15 @@ import type { Project } from "@/data/types";
 
 export const projects: Project[] = [
   {
+    name: "topheman/effect-viz",
+    description: "Effect runtime visualizer",
+    link: {
+      href: "https://github.com/topheman/effect-viz",
+      title: "Effect runtime visualizer",
+    },
+    tags: ["effect", "typescript", "react"],
+  },
+  {
     name: "topheman/update-homebrew-tap",
     description:
       "GitHub Action that updates a formula of a homebrew-tap repo based on your template",
