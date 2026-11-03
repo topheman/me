@@ -2,6 +2,24 @@ import type { Project } from "@/data/types";
 
 export const projects: Project[] = [
   {
+    name: "pingpad",
+    description:
+      "Play ping pong with your smartphone as a paddle watching the screen of your laptop",
+    link: {
+      href: "https://pingpad.app",
+      title: "Table tennis in the browser with your phone as the paddle",
+    },
+    tags: [
+      "game",
+      "webrtc",
+      "peerjs",
+      "deviceorientation",
+      "react",
+      "threejs",
+      "typescript",
+    ],
+  },
+  {
     name: "topheman/effect-viz",
     description: "Effect runtime visualizer",
     link: {
