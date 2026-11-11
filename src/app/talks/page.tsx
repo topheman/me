@@ -1,8 +1,10 @@
 import { ExternalLink, Video, Youtube } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import { talks, videos } from "@/data/talks";
+import effectIcon from "@/images/effect.png";
 import { getMetadata } from "@/utils/metadata";
 
 export const metadata: Metadata = getMetadata({
@@ -92,6 +94,11 @@ export default function TalksPage() {
                   title="WebAssembly"
                 >
                   🧩
+                </span>
+              )}
+              {talk.tags.includes("effect") && (
+                <span className="ml-2" aria-hidden="true" title="Effect">
+                  <Image src={effectIcon} alt="" width={20} height={20} />
                 </span>
               )}
             </div>

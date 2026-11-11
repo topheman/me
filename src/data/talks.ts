@@ -2,6 +2,17 @@ import type { Talk } from "@/data/types";
 
 export const talks: Talk[] = [
   {
+    title: "EffectViz: Effect runtime visualizer",
+    url: "https://effect-viz.vercel.app",
+    event: {
+      name: "Meetup Effect Paris",
+      url: "https://www.linkedin.com/feed/update/urn:li:activity:7513908562310483969/",
+    },
+    date: "oct 2026",
+    videoLinks: [],
+    tags: ["effect"],
+  },
+  {
     title: "Discover WebAssembly Component Model",
     url: "https://topheman.github.io/talks/webassembly-component-model/",
     event: {
